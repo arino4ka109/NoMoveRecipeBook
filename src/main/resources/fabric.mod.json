@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "noscreenmove",
+  "version": "${version}",
+  "name": "noscreenmove",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/noscreenmove/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.client.noscreenmoveClient"
+    ],
+    "main": [
+      "com.example.noscreenmove"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "noscreenmove.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
